@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:contentDescription="banner"
+        android:scaleType="centerCrop"
+        android:src="@drawable/devslopesbanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:background="@color/white"
+        android:contentDescription="logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/devslopesprofilelogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Devslopes"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        android:contentDescription="camera"
+        android:scaleType="centerCrop"
+        android:src="@drawable/camerabutton"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <ImageButton
+        android:id="@+id/favorite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/white"
+        android:contentDescription="favorite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/favoritebutton"
+        app:layout_constraintStart_toEndOf="@id/camera"
+        app:layout_constraintTop_toTopOf="@id/camera" />
+
+    <ImageButton
+        android:id="@+id/inbox"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/white"
+        android:contentDescription="inbox"
+        android:scaleType="centerCrop"
+        android:src="@drawable/inboxbutton"
+        app:layout_constraintStart_toEndOf="@id/favorite"
+        app:layout_constraintTop_toTopOf="@id/favorite" />
+
+    <ImageButton
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:id="@+id/dataImage"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:contentDescription="code"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dataimage"
+        app:layout_constraintBottom_toTopOf="@id/videoImage"
+        app:layout_constraintStart_toStartOf="@id/videoImage" />
+
+    <ImageButton
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:contentDescription="code"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagesimage"
+        app:layout_constraintBottom_toTopOf="@id/codeImage"
+        app:layout_constraintStart_toStartOf="@id/codeImage" />
+
+    <ImageButton
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/videoImage"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="28dp"
+        android:contentDescription="code"
+        android:scaleType="centerCrop"
+        android:src="@drawable/videosimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/codeImage"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="code"
+        android:scaleType="centerCrop"
+        android:src="@drawable/codeimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
